@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Controller.SearchController">
+   <children>
+      <TabPane layoutX="6.0" prefHeight="600.0" prefWidth="1150.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Пошук пацієнта">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="567.0" prefWidth="1000.0">
+                     <children>
+                        <Pane layoutX="-6.0" prefHeight="534.0" prefWidth="1150.0">
+                           <children>
+                              <DatePicker fx:id="dobDatePicker" layoutX="172.0" layoutY="47.0" prefHeight="27.0" prefWidth="164.0" />
+                              <TextField fx:id="nameTextField" layoutX="172.0" layoutY="17.0" prefHeight="27.0" prefWidth="258.0" />
+ 
+                              <Label layoutX="22.0" layoutY="22.0" text="ПІБ,ID пацієнта" />
+                              <Label layoutX="22.0" layoutY="52.0" text="Дата нр. пацієнта" />
+                              
+                              <TableView fx:id="infoTableView" layoutX="10.0" layoutY="86.0" prefHeight="441.0" prefWidth="1130.0">
+                                 <columns>
+                                    <TableColumn fx:id="idTableColumn" prefWidth="60" text="ID" />
+                                    <TableColumn fx:id="nameTableColumn" prefWidth="230.0" text="Пацієнт" />
+                                    <TableColumn fx:id="specialistTableColumn" prefWidth="230.0" text="Cпеціаліст" />
+                                    <TableColumn fx:id="idExaminationTableColumn" prefWidth="120.0" text="ID Обстеження" />
+                                    <TableColumn fx:id="dateTableColumn" prefWidth="155.0" text="Дата обстеження" />
+                                    <TableColumn fx:id="idTreatmentTableColumn" prefWidth="115.0" text="ID Лікування" />
+                                    <TableColumn fx:id="dateTreatmentTableColumn" prefWidth="155.0" text="Дата лікування" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="searchButton" layoutX="4.0" layoutY="536.0" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="27.0" prefWidth="100.0" text="Вихід" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

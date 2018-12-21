@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Controller.NewPatientController">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="15.0" layoutY="49.0" text="ID Пацієнта" />
+            <Label layoutX="15.0" layoutY="79.0" text="Прізвише" />
+            <Label layoutX="15.0" layoutY="109.0" text="Ім'я" />
+            <Label layoutX="15.0" layoutY="139.0" text="По-батькові" />
+            <Label layoutX="15.0" layoutY="169.0" text="Дата народження" />
+            <TextField fx:id="idPatientFiedText" layoutX="150.0" layoutY="44.0" />
+            <TextField fx:id="lastNamePatientTextField" layoutX="150.0" layoutY="74.0" />
+            <TextField fx:id="firstNamePatientTextField" layoutX="150.0" layoutY="104.0" />
+            <TextField fx:id="fathernamePatientTextField" layoutX="150.0" layoutY="134.0" />
+            <DatePicker fx:id="dobPatientDatePicker" layoutX="150.0" layoutY="164.0" />
+            <TextField fx:id="numberPhonePatientTextField" layoutX="150.0" layoutY="262.0" text="+380" />
+            <Label layoutX="15.0" layoutY="267.0" text="Номер телефону" />
+            <Label layoutX="15.0" layoutY="297.0" text="Електронна адреса" />
+            <TextField fx:id="emailPatientTextField" layoutX="150.0" layoutY="292.0" />
+            <TextField fx:id="countryPatientTextField" layoutX="152.0" layoutY="363.0" />
+            <Label layoutX="15.0" layoutY="368.0" text="Країна" />
+            <TextField fx:id="oblastPatientTextField" layoutX="152.0" layoutY="393.0" />
+            <Label layoutX="17.0" layoutY="398.0" text="Область" />
+            <TextField fx:id="regionPatientTextField" layoutX="152.0" layoutY="423.0" />
+            <Label layoutX="17.0" layoutY="428.0" text="Район" />
+            <TextField fx:id="cityPatientTextField" layoutX="152.0" layoutY="453.0" />
+            <Label layoutX="17.0" layoutY="458.0" text="Населенний пункт" />
+            <Label layoutX="17.0" layoutY="488.0" text="Вулиця" />
+            <TextField fx:id="addressPatientTextField" layoutX="152.0" layoutY="483.0" />
+            <TextField fx:id="housePatientTextField" layoutX="152.0" layoutY="513.0" />
+            <Label layoutX="17.0" layoutY="518.0" text="Будинок" />
+            <TextField fx:id="flatPatientTextField" layoutX="152.0" layoutY="543.0" />
+            <Label layoutX="17.0" layoutY="548.0" text="Квартира" />
+            <Label layoutX="15.0" layoutY="238.0" text="Контактна інформація пацієнта">
+                 <font>
+                      <Font size="15.0" />
+                 </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="334.0" text="Адреса проживання пацієнта">
+                 <font>
+                      <Font size="15.0" />
+                 </font>
+            </Label>
+            <TextArea fx:id="dopInfoPatientTextArea" layoutX="360.0" layoutY="42.0" prefHeight="200.0" prefWidth="400.0" />
+            <Button fx:id="idAddNewPatientButton" layoutX="560.0" layoutY="285.0" mnemonicParsing="false" onAction="#addNewPatientButtonAction" prefHeight="27.0" prefWidth="200.0" text="Добавити нового пацієнта" />
+            <Button fx:id="updatePatientButton" layoutX="560.0" layoutY="320.0" mnemonicParsing="false" onAction="#updatePatientButtonAction" prefHeight="27.0" prefWidth="200.0" text="Оновити дані пацієнта" />
+            <CheckBox fx:id="womanCheckBox" layoutX="150.0" layoutY="199.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="82.0" text="Жінка" />
+            <Label layoutX="16.0" layoutY="199.0" text="Стать" />
+            <CheckBox fx:id="manCheckBox" layoutX="234.0" layoutY="199.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="82.0" text="Чоловік" />
+        	<Button fx:id="exitNewPatientButton" layoutX="15.0" layoutY="588.0" mnemonicParsing="false" onAction="#exitNewPatientButtonAction" prefHeight="27.0" prefWidth="100.0" text="Вихід" />
+            <Label layoutX="361.0" layoutY="255.0" text="Лікар" />
+            <ComboBox fx:id="doctorComboBox" layoutX="413.0" layoutY="250.0" prefHeight="27.0" prefWidth="300.0" />
+            <Label layoutX="418.0" layoutY="19.0" text="Додаткова інформація про пацієнта">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="14.0" text="Дані пацієнта">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

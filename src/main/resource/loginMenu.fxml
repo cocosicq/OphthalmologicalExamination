@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="204.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Controller.LoginController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="178.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="147.0" text="Авторизуватись" />
+            <TextField fx:id="loginTextField" layoutX="25.0" layoutY="50.0" prefHeight="27.0" prefWidth="300.0" />
+            <PasswordField fx:id="passTextField" layoutX="25.0" layoutY="79.0" prefHeight="27.0" prefWidth="300.0" />
+            <Label fx:id="wrongLoginPassword" layoutX="90.0" layoutY="152.0" />
+            <Button fx:id="forgotPasswordButton" alignment="CENTER" layoutX="25.0" layoutY="116.0" mnemonicParsing="false" onAction="#forgotPasswordButtonAction" prefHeight="17.0" prefWidth="147" text="Забули пароль" />
+            <Label layoutX="76.0" layoutY="14.0" text="Авторизація користувача">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Controller.AppointmentTreatmentController">
+   <children>
+      <Pane prefHeight="672.0" prefWidth="800.0">
+         <children>
+            <TextField fx:id="surveyIDTextField" layoutX="225.0" layoutY="102.0" prefHeight="27.0" prefWidth="194.0" />
+            <TextField fx:id="specialistIDTextField" layoutX="225.0" layoutY="72.0" prefHeight="27.0" prefWidth="194.0" />
+            <Label layoutX="15.0" layoutY="107.0" text="ID Обстеження" />
+            <Label layoutX="15.0" layoutY="77.0" text="Спеціаліст" />
+            <Label layoutX="15.0" layoutY="47.0" text="Дата проведення лікування" />
+            <DatePicker fx:id="dateTreatmentDatePicker" layoutX="225.0" layoutY="42.0" />
+            <TabPane layoutX="15.0" layoutY="148.0" prefHeight="391.0" prefWidth="778.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Консервативне лікування">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="281.0" prefWidth="630.0">
+                           <children>
+                              <CheckBox fx:id="myoticsCheckBox" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" text="Міотики" />
+                              <CheckBox fx:id="betaBlockersCheckBox" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" text="Бета-блокатори" />
+                              <CheckBox fx:id="prostaglandinsCheckBox" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" text="Протогландини" />
+                              <Label layoutX="15.0" layoutY="15.0" prefHeight="17.0" prefWidth="308.0" text="Препарати що знижуть ВОТ:" />
+                              <TextArea fx:id="myoticsTextArea" layoutX="159.0" layoutY="40.0" prefHeight="40.0" prefWidth="428.0"   />
+                              <TextArea fx:id="prostaglandinsTextArea" layoutX="159.0" layoutY="140.0" prefHeight="40.0" prefWidth="428.0" />
+                              <TextArea fx:id="betaBlockersTextArea" layoutX="159.0" layoutY="90.0" prefHeight="40.0" prefWidth="428.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Оперативне лікування">
+                     <content>
+                        <ScrollPane prefHeight="358.0" prefWidth="778.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="778.0">
+                                 <children>
+                                    <CheckBox fx:id="cyclodegradationCheckBox" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" text="Циклодеструкція" />
+                                    <CheckBox fx:id="applicationOflaserTreatmentCheckBox" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" text="Застосування лазерного лікування" />
+                                    <CheckBox fx:id="iridectomyCheckBox" layoutX="14.0" layoutY="112.0" mnemonicParsing="false" text="Іридиктомія" />
+                                    <CheckBox fx:id="trabeculotomyCheckBox" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" text="Трабекулоктомія" />
+                                    <CheckBox fx:id="rearSclerectomyCheckBox" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" text="Задня склеректомія" />
+                                    <CheckBox fx:id="sinusotrabuculotomyWithBasaliridectomyCheckBox" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" text="Сінусотробекулоктомія (із базальною ірідектомією)" />
+                                    <CheckBox fx:id="sinusothrabuculotomyCheckBox" layoutX="14.0" layoutY="312.0" mnemonicParsing="false" text="Сінусотробекулоктомія" />
+                                   
+                                    <TextArea fx:id="rearSclerectomyTextArea" layoutX="311.0" layoutY="2.0" prefHeight="40.0" prefWidth="428.0" />
+                                    <TextArea fx:id="applicationOflaserTreatmentTextArea" layoutX="311.0" layoutY="52.0" prefHeight="40.0" prefWidth="428.0" />
+                                    <TextArea fx:id="iridectomyTextArea" layoutX="311.0" layoutY="102.0" prefHeight="40.0" prefWidth="428.0" />
+                                    <TextArea fx:id="trabeculotomyTextArea" layoutX="311.0" layoutY="152.0" prefHeight="40.0" prefWidth="428.0" />
+                                    <TextArea fx:id="cyclodegradationTextArea" layoutX="311.0" layoutY="202.0" prefHeight="40.0" prefWidth="428.0" />
+                                    <TextArea fx:id="sinusotrabuculotomyWithBasaliridectomyTextArea" layoutX="403.0" layoutY="252.0" prefHeight="40.0" prefWidth="336.0" />
+                                    <TextArea fx:id="sinusothrabuculotomyTextArea" layoutX="311.0" layoutY="302.0" prefHeight="40.0" prefWidth="428.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Непряма нейроретинопротекція">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="642.0">
+                           <children>
+                              <CheckBox fx:id="physiotherapyCheckBox" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" text="Фізіотерапія" />
+                              <CheckBox fx:id="bbInjectionCheckBox" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" text="В-в ін'єкції" />
+                              <CheckBox fx:id="oralInjectionsCheckBox" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" text="Пероральні препарати" />
+                              <CheckBox fx:id="pbInjectionCheckBox" layoutX="14.0" layoutY="215.0" mnemonicParsing="false" text="П-б ін'єкції" />
+                              <CheckBox fx:id="bmInjectionCheckBox" layoutX="14.0" layoutY="112.0" mnemonicParsing="false" text="В-м ін'єкції" />
+                              
+                              <TextArea fx:id="physiotherapyTextArea" layoutX="311.0" layoutY="2.0" prefHeight="40.0" prefWidth="428.0" />
+                              <TextArea fx:id="bbInjectionTextArea" layoutX="311.0" layoutY="52.0" prefHeight="40.0" prefWidth="428.0" />
+                              <TextArea fx:id="bmInjectionTextArea" layoutX="311.0" layoutY="102.0" prefHeight="40.0" prefWidth="428.0" />
+                              <TextArea fx:id="oralInjectionsTextArea" layoutX="311.0" layoutY="152.0" prefHeight="40.0" prefWidth="428.0" />
+                              <TextArea fx:id="pbInjectionTextArea" layoutX="311.0" layoutY="202.0" prefHeight="40.0" prefWidth="428.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <Button fx:id="updateTreatmentButton" layoutX="282.0" layoutY="641.0" mnemonicParsing="false" onAction="#updateTreatmentButtonAction" prefHeight="27.0" prefWidth="173.0" text="Оновити лікування" />
+            <Button fx:id="saveTreatmentButton" layoutX="469.0" layoutY="641.0" mnemonicParsing="false" onAction="#saveTreatmentButtonAction" prefHeight="27.0" prefWidth="173.0" text="Зберегти лікування" />
+            <TextArea fx:id="infoTextArea" layoutX="14.0" layoutY="552.0" prefHeight="79.0" prefWidth="630.0" />
+            <Button fx:id="exitButton" layoutX="15.0" layoutY="641.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="27.0" prefWidth="100.0" text="Вихід" />
+            <Label layoutX="15.0" layoutY="17.0" text="ID лікування" />
+            <TextField fx:id="idTreatmentTextField" layoutX="225.0" layoutY="12.0" prefHeight="27.0" prefWidth="194.0" />
+            
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

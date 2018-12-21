@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Controller.MenuController">
+   <children>      
+      <Button fx:id="changePasswordButton" layoutX="422.0" layoutY="1.0" mnemonicParsing="false" onAction="#changePasswordButtonAction" prefHeight="15.0" prefWidth="130.0" text="Змінити пароль" />
+      <Button fx:id="buttonNewPatient" layoutX="295.0" layoutY="82.0" mnemonicParsing="false" onAction="#newPatientButtonAction" prefHeight="30.0" prefWidth="230.0" text="Добавити пацієнта" />
+      <Button fx:id="buttonSearch" layoutX="25.0" layoutY="82.0" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="30.0" prefWidth="230.0" text="Пошук пацієнта" />
+      <Label fx:id="profesionLabel" layoutX="14.0" layoutY="14.0" />
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="32.0" />
+      <Label fx:id="dateLabel" layoutX="17.0" layoutY="145.0" />
+      <Label fx:id="subscriptionTermLabel" layoutX="17.0" layoutY="165.0" />
+      <Button fx:id="logOutButton" layoutX="349.0" layoutY="156.0" mnemonicParsing="false" onAction="#logOutButtonAction" prefHeight="27.0" prefWidth="175.0" text="Змінити користувача" />
+   </children>
+</AnchorPane>

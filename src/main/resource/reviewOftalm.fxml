@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.Controller.ReviewOftalmController">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="15.0" layoutY="25.0" text="ПІБ Пацієнта:" />
+	        <Label layoutX="15.0" layoutY="55.0" text="Спеціаліст:" />
+            <Label layoutX="15.0" layoutY="85.0" text="Дата обстеження:" />
+            <ScrollPane layoutX="15.0" layoutY="180.0" prefHeight="405.0" prefWidth="762.0">
+               <content>
+                  <TabPane prefHeight="446.0" prefWidth="824.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Праве око">
+                           <content>
+                              <Pane prefHeight="391.0" prefWidth="772.0">
+                                 <children>
+                                    <Label layoutX="15.0" layoutY="115.0" text="ВОТ OD" />
+                                    <Label layoutX="400.0" layoutY="40.0" text="Пахіметрія OD" />
+                                    <Label layoutX="15.0" layoutY="145.0" text="Фундус OD" />
+                                    <Label layoutX="15.0" layoutY="25.0" text="Vizus OD" />
+                                    <Label layoutX="15.0" layoutY="85.0" text="Фосфен OD" />
+                                    <Label layoutX="15.0" layoutY="55.0" text="Хамфрі OD" />
+                                    <Label layoutX="15.0" layoutY="175.0" text="MD OD" />
+                                    <Label layoutX="15.0" layoutY="205.0" text="MD OD 3D" />
+                                    <Label layoutX="15.0" layoutY="235.0" text="Гоніоскопія OD" />
+                                    <Label layoutX="15.0" layoutY="265.0" text="Кут п/к OD" />
+                                    <Label layoutX="15.0" layoutY="295.0" text="ДЗН OD" />
+                                    <Label layoutX="400.0" layoutY="125.0" text="MACULA OD" />
+                                    <Label layoutX="400.0" layoutY="225.0" text="MACULA OD 3D" />
+                                    <TextField fx:id="textFieldVizusOD" layoutX="167.0" layoutY="20.0" prefHeight="27.0" prefWidth="165.0" />
+                                    <TextField fx:id="textFieldFosfenOD" layoutX="167.0" layoutY="80.0" prefHeight="27.0" prefWidth="165.0" />
+                                    <TextField fx:id="textFieldBotOD" layoutX="167.0" layoutY="110.0" prefHeight="27.0" prefWidth="165.0" />
+                                    <Button fx:id="buttonHamfriOD" layoutX="167.0" layoutY="50.0" mnemonicParsing="false" onAction="#buttonHamfriODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonAtlasOD" layoutX="167.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonAtlasODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonCamera3dOD" layoutX="167.0" layoutY="200.0" mnemonicParsing="false" onAction="#buttonCamera3dODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonCorneeNOD" layoutX="167.0" layoutY="230.0" mnemonicParsing="false" onAction="#buttonCorneeNODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonGDXOD" layoutX="167.0" layoutY="260.0" mnemonicParsing="false" onAction="#buttonGDXODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonCameraOD" layoutX="167.0" layoutY="170.0" mnemonicParsing="false" onAction="#buttonCameraODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonHrtOD" layoutX="167.0" layoutY="290.0" mnemonicParsing="false" onAction="#buttonHrtODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Label layoutX="15.0" layoutY="325.0" text="Поле зору OD" />
+                                    <Button fx:id="buttonPoleZoruOD" layoutX="167.0" layoutY="320.0" mnemonicParsing="false" onAction="#buttonPoleZoruODAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOD4" onAction="#buttonHicknessOfCorneaOD4Action" layoutX="609.0" layoutY="50.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOD2" onAction="#buttonHicknessOfCorneaOD2Action" layoutX="609.0" layoutY="20.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOD1" onAction="#buttonHicknessOfCorneaOD1Action" layoutX="516.0" layoutY="20.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOD3" onAction="#buttonHicknessOfCorneaOD3Action" layoutX="516.0" layoutY="50.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOD1" onAction="#buttonMaculaOD1Action" layoutX="516.0" layoutY="105.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOD3" onAction="#buttonMaculaOD3Action" layoutX="516.0" layoutY="135.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOD4" onAction="#buttonMaculaOD4Action" layoutX="609.0" layoutY="135.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOD2" onAction="#buttonMaculaOD2Action" layoutX="609.0" layoutY="105.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOd3D4" onAction="#buttonMaculaOd3D4Action" layoutX="609.0" layoutY="235.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOd3D2" onAction="#buttonMaculaOd3D2Action" layoutX="609.0" layoutY="205.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOd3D3" onAction="#buttonMaculaOd3D3Action" layoutX="516.0" layoutY="236.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOd3D1" onAction="#buttonMaculaOd3D1Action" layoutX="516.0" layoutY="205.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="91.0" text="Відкрити" />
+                                 </children>
+                              </Pane>
+                           </content>
+                        </Tab>
+                        <Tab text="Ліве око">
+                           <content>
+                              <Pane prefHeight="387.0" prefWidth="762.0">
+                                 <children>
+                                    <TextField fx:id="textFieldVisusOS" layoutX="167.0" layoutY="20.0" prefHeight="27.0" prefWidth="165.0" />
+                                    <Label layoutX="15.0" layoutY="25.0" text="Vizus OS" />
+                                    <Button fx:id="buttonCorneeNOS" layoutX="167.0" layoutY="230.0" mnemonicParsing="false" onAction="#buttonCorneeNOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonGdXOS" layoutX="167.0" layoutY="260.0" mnemonicParsing="false" onAction="#buttonGDXOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonCamera3dOS" layoutX="167.0" layoutY="200.0" mnemonicParsing="false" onAction="#buttonCamera3dOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonHamfriOS" layoutX="167.0" layoutY="50.0" mnemonicParsing="false" onAction="#buttonHamfriOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonCameraOS" layoutX="167.0" layoutY="170.0" mnemonicParsing="false" onAction="#buttonCameraOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <TextField fx:id="textFieldFosfenOS" layoutX="167.0" layoutY="80.0" prefHeight="27.0" prefWidth="164.0" />
+                                    <TextField fx:id="textFieldBotOS" layoutX="167.0" layoutY="110.0" prefHeight="27.0" prefWidth="165.0" />
+                                    <Label layoutX="15.0" layoutY="265.0" text="Кут п/к OS" />
+                                    <Label layoutX="15.0" layoutY="235.0" text="Гоніоскопія OS" />
+                                    <Label layoutX="15.0" layoutY="205.0" text="MD OS 3D" />
+                                    <Label layoutX="15.0" layoutY="175.0" text="MD OS" />
+                                    <Label layoutX="15.0" layoutY="55.0" text="Хамфрі OS" />
+                                    <Label layoutX="15.0" layoutY="85.0" text="Фосфен OS" />
+                                    <Label layoutX="15.0" layoutY="145.0" text="Фундус OS" />
+                                    <Label layoutX="15.0" layoutY="115.0" prefHeight="17.0" prefWidth="133.0" text="ВОТ OS" />
+                                    <Label layoutX="13.0" layoutY="325.0" text="Поле зору OS" />
+                                    <Button fx:id="buttonPoleZoruOS" layoutX="167.0" layoutY="320.0" mnemonicParsing="false" onAction="#buttonPoleZoruOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonHrtOS" layoutX="167.0" layoutY="290.0" mnemonicParsing="false" onAction="#buttonHrtOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Label layoutX="15.0" layoutY="295.0" text="ДЗН OS" />
+                                    <Button fx:id="buttonAtlasOS" layoutX="167.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonAtlasOSAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOs3D4" onAction="#buttonMaculaOs3D4Action"  layoutX="609.0" layoutY="235.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOS4" onAction="#buttonMaculaOS4Action" layoutX="609.0" layoutY="135.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOS3" onAction="#buttonMaculaOS3Action" layoutX="516.0" layoutY="135.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOS2" onAction="#buttonMaculaOS2Action" layoutX="609.0" layoutY="105.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOS1" onAction="#buttonMaculaOS1Action" layoutX="516.0" layoutY="105.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOS4" onAction="#buttonHicknessOfCorneaOS4Action" layoutX="609.0" layoutY="50.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOS2" onAction="#buttonHicknessOfCorneaOS2Action" layoutX="609.0" layoutY="20.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOS1" onAction="#buttonHicknessOfCorneaOS1Action" layoutX="516.0" layoutY="20.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonHicknessOfCorneaOS3" onAction="#buttonHicknessOfCorneaOS3Action" layoutX="516.0" layoutY="50.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOs3D2" onAction="#buttonMaculaOs3D2Action" layoutX="609.0" layoutY="205.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOs3D1" onAction="#buttonMaculaOs3D1Action" layoutX="516.0" layoutY="205.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Button fx:id="buttonMaculaOs3D3" onAction="#buttonMaculaOs3D3Action" layoutX="516.0" layoutY="236.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Відкрити" />
+                                    <Label layoutX="400.0" layoutY="225.0" text="MACULA OS 3D" />
+                                    <Label layoutX="400.0" layoutY="125.0" text="MACULA OS" />
+                                    <Label layoutX="400.0" layoutY="40.0" text="Пахіметрія OS" />
+                                 </children>
+                              </Pane>
+                           </content>
+                        </Tab>
+                        <Tab text="Праве-ліве око">
+                           <content>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="buttonMaculaOU" layoutX="167.0" layoutY="50.0" mnemonicParsing="false" onAction="#buttonMaculaOUAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Label layoutX="15.0" layoutY="115.0" text="Поле Зору OU" />
+                                    <Label layoutX="15.0" layoutY="25.0" text="Фундус OU" />
+                                    <Label layoutX="15.0" layoutY="55.0" text="Macula OU" />
+                                    <Label layoutX="15.0" layoutY="85.0" text="ДЗН OU" />
+                                    <Label layoutX="15.0" layoutY="145.0" text="Пахіметрія OU" />
+                                    <Button fx:id="buttonHicknessOfCorneaOU" layoutX="167.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonHicknessOfCorneaOUAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonHPTOU" layoutX="167.0" layoutY="80.0" mnemonicParsing="false" onAction="#buttonHPTOUAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonAtlasOU" layoutX="167.0" layoutY="20.0" mnemonicParsing="false" onAction="#buttonAtlasOUAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                    <Button fx:id="buttonFieldViewOU" layoutX="167.0" layoutY="110.0" mnemonicParsing="false" onAction="#buttonFieldViewOUAction" prefHeight="27.0" prefWidth="165.0" text="Відкрити" />
+                                 </children>
+                              </Pane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </content>
+            </ScrollPane>
+            <Button fx:id="buttonJustDoIt" layoutX="589.0" layoutY="20.0" mnemonicParsing="false" onAction="#buttonJustDoItAction" prefHeight="27.0" prefWidth="180.0" text="Призначити лікування" />
+            <Button fx:id="exitButton" layoutX="16.0" layoutY="589.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="27.0" prefWidth="100.0" text="Вихід" />
+            <Label layoutX="16.0" layoutY="155.0" text="Офтальмологічні дані:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNamePatient" layoutX="200.0" layoutY="25.0" text="NAME Пацієнт" />
+            <Label fx:id="labelNameSpecialist" layoutX="200.0" layoutY="55.0" text="NAME Спеціаліст" />
+            <Label fx:id="labelDateOftalm" layoutX="200.0" layoutY="85.0" text="Дата обстеження" />
+            <Label fx:id="labelNameDoctor" layoutX="200.0" layoutY="115.0" text="ПІБ Лікаря">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="115.0" text="Лікар:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
